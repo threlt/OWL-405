@@ -1,5 +1,7 @@
-// MADE BY THR - ENSLAVER - THRILLPHONK
-// EULA COPYRIGHT
+// © Code made by THR - THRILLPHONK ©
+
+
+// EULA COPYRIGHT©
 
 
 #include <iostream>
@@ -12,6 +14,13 @@ int main()
         cout<<"\nWhat will i do, if: \n1 - addition; 2 - deduction; 3 - multix; 4 - division; 5 - find out squad ?"<<endl;
         cout<<"\nType here: ";
                 cin>>w;
+
+    while (w>5 || w<1){
+        cout<<"\nYou have to choose correct do \n";
+        cout<<"1 - addition; 2 - deduction; 3 - multix; 4 - division; 5 - find out squad\n";
+        cout<<"\nType it here: ";
+                cin>>w;
+
                     if ( w < 5 ) {
 
                     double first;
@@ -398,6 +407,6 @@ int main()
                                                             cout<<"\nSorry try again!"; } }
 
                         }
-
+        }
     return 0;
 }
