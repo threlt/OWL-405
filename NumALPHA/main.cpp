@@ -1,7 +1,10 @@
-// © Code made by THR - THRILLPHONK ©
+//MADE BY  THR - THRILLPHONK©
 
 
-// EULA COPYRIGHT©
+
+// # EULA ©©© COPYRIGHT #
+
+
 
 
 #include <iostream>
@@ -19,7 +22,7 @@ int main()
         cout<<"\nYou have to choose correct do \n";
         cout<<"1 - addition; 2 - deduction; 3 - multix; 4 - division; 5 - find out squad\n";
         cout<<"\nType it here: ";
-                cin>>w;
+                cin>>w;}
 
                     if ( w < 5 ) {
 
@@ -407,6 +410,6 @@ int main()
                                                             cout<<"\nSorry try again!"; } }
 
                         }
-        }
+
     return 0;
 }
