@@ -1,3 +1,6 @@
+// MADE BY THR - ENSLAVER - THRILLPHONK
+
+
 #include <iostream>
 #include <math.h>
     using namespace std;
