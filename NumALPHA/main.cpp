@@ -1,4 +1,5 @@
 // MADE BY THR - ENSLAVER - THRILLPHONK
+// EULA COPYRIGHT
 
 
 #include <iostream>
