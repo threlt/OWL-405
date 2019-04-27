@@ -160,7 +160,7 @@ int main()
                                     double res3 = sqrt(d);
 
 
-                                           if (a!=1 && b>0 && c>0) {
+                                           if (a!=1 && a!=-1 && b>0 && b!=1 && c>0) {
                                             cout<<"\nYour equation looks like: "<<endl;
                                                 cout<<a<<"x^2"<<" + "<<b<<"x"<<" + "<<c<<" = 0?\n";
                                                     cout<<"Type 1 if yes, 2 if no.\n\nType here: ";
@@ -193,9 +193,9 @@ int main()
                                                     }
 
 
-                                                        if (a!=1 && b<0 && c>0) {
+                                                        if (a!=1 && a!=-1 && b!=-1 && b<0 && c>0) {
                                             cout<<"\nYour equation looks like: "<<endl;
-                                                cout<<a<<"x^2"<<" "<<b<<"x"<<" + "<<c<<" = 0?\n";
+                                                cout<<a<<"x^2"<<" ERROR"<<b<<"x"<<" + "<<c<<" = 0?\n";
                                                     cout<<"Type 1 if yes, 2 if no.\n\nType here: ";
                                             double check;
                                                     cin>>check;
@@ -225,12 +225,12 @@ int main()
                                                     }
 
 
-                                                        if (a!=1 && b > 0 && c < 0) {
-                                            cout<<"\nYour equation looks like: "<<endl;
-                                                cout<<a<<"x^2"<<" + "<<b<<"x"<<" "<<c<<" = 0?\n";
+                                                        if (a!=1 && a!=-1 && b > 0 && b!=1 && c < 0) {
+                                                    cout<<"\nYour equation looks like: "<<endl;
+                                                    cout<<a<<"x^2"<<" + "<<b<<"x "<<c<<" = 0?\n";
                                                     cout<<"Type 1 if yes, 2 if no.\n\nType here: ";
-                                                    double check;
-                                                    cin>>check;
+                                                        double check;
+                                                            cin>>check;
                                                         while (check<1 || check>2) {
                                                             cout<<"Please, type 1 or 2!\nType here: ";
                                                                 cin>>check;
@@ -256,7 +256,7 @@ int main()
                                                             }
                                                     }
 
-                                                            if (a!=1 && b < 0 && c < 0) {
+                                                            if (a!=1 && a!=-1 && b < 0 && b!=-1 && c < 0) {
                                             cout<<"\nYour equation looks like: "<<endl;
                                                 cout<<a<<"x^2"<<" "<<b<<"x"<<" "<<c<<" = 0?\n";
                                                     cout<<"Type 1 if yes, 2 if no.\n\nType here: ";
@@ -317,7 +317,7 @@ int main()
 
 
 
-                                                            if (a==1 && b<0 && b!=1 && c>0) {
+                                                            if (a==1 && b<0 && b!=-1 && c>0) {
                                                             cout<<"\nYour equation looks like: "<<endl;
                                                             cout<<"x^2"<<" "<<b<<"x"<<" + "<<c<<" = 0?\n";
                                                             cout<<"Type 1 if yes, 2 if no.\n\nType here: ";
@@ -442,7 +442,7 @@ int main()
 
                                                                if ( a == 1 && b == 1 && c < 0) {
                                                             cout<<"\nYour equation looks like: "<<endl;
-                                                            cout<<"x^2"<<" + "<<"x"<<" + "<<c<<" = 0?\n";
+                                                            cout<<"x^2"<<" +"<<"x "<<c<<" = 0?\n";
                                                             cout<<"Type 1 if yes, 2 if no.\n\nType here: ";
                                                                 double check;
                                                                     cin>>check;
@@ -468,7 +468,392 @@ int main()
 
                                                             if (check==2) {
                                                             cout<<"\nSorry try again!"; } }
-                        }
 
+                                                    if (a == -1 && b>0 && b!=1 && c>0)
+                                                    {
+                                                        cout<<"\nYour equation looks like: "<<endl;
+                                                        cout<<"-x^2"<<" + "<<b<<"x"<<" + "<<c<<" = 0?\n";
+                                                        cout<<"Type 1 if yes, 2 if no.\n\nType here: ";
+
+                                                            double check;
+                                                                cin>>check;
+
+                                                            while (check<1 || check>2) {
+                                                                cout<<"Please, type 1 or 2!\nType here: ";
+                                                                    cin>>check;
+                                                    }
+                                                    if (check==1) {
+                                                             d=b*b+eq4*a*c;
+                                                                if (d>0) {
+                                                                                res = (eq1*b+sqrt(d)) / (a+a);
+                                                                                res1 = (eq1*b-sqrt(d)) / (a+a);
+                                                                                cout<<"\nYou first result is: "<<res<<endl;
+                                                                                cout<<"\nYou second result is: "<<res1<<endl;
+                                                                        }
+
+                                                                        if (d<0) {
+                                                                            cout<<"\nAnswer does not exist.\n";
+                                                                                }
+
+                                                                    }
+                                                                    if (check==2) {
+                                                            cout<<"\nSorry try again!"; }
+                                                            }
+
+
+
+                                                        if (a == -1 && b<0 && b!=-1 && c>0)
+                                                    {
+                                                        cout<<"\nYour equation looks like: "<<endl;
+                                                        cout<<"-x^2 "<<b<<"x"<<" + "<<c<<" = 0?\n";
+                                                        cout<<"Type 1 if yes, 2 if no.\n\nType here: ";
+
+                                                            double check;
+                                                                cin>>check;
+
+                                                            while (check<1 || check>2) {
+                                                                cout<<"Please, type 1 or 2!\nType here: ";
+                                                                    cin>>check;
+                                                    }
+                                                    if (check==1) {
+                                                             d=b*b+eq4*a*c;
+                                                                if (d>0) {
+                                                                                res = (eq1*b+sqrt(d)) / (a+a);
+                                                                                res1 = (eq1*b-sqrt(d)) / (a+a);
+                                                                                cout<<"\nYou first result is: "<<res<<endl;
+                                                                                cout<<"\nYou second result is: "<<res1<<endl;
+                                                                        }
+
+                                                                        if (d<0) {
+                                                                            cout<<"\nAnswer does not exist.\n";
+                                                                                }
+
+                                                                    }
+                                                                    if (check==2) {
+                                                            cout<<"\nSorry try again!"; }
+                                                            }
+
+
+
+                                                        if (a == -1 && b>0 && b!=1 && c<0)
+                                                    {
+                                                        cout<<"\nYour equation looks like: "<<endl;
+                                                        cout<<"-x^2"<<" + "<<b<<"x "<<c<<" = 0?\n";
+                                                        cout<<"Type 1 if yes, 2 if no.\n\nType here: ";
+
+                                                            double check;
+                                                                cin>>check;
+
+                                                            while (check<1 || check>2) {
+                                                                cout<<"Please, type 1 or 2!\nType here: ";
+                                                                    cin>>check;
+                                                    }
+                                                    if (check==1) {
+                                                             d=b*b+eq4*a*c;
+                                                                if (d>0) {
+                                                                                res = (eq1*b+sqrt(d)) / (a+a);
+                                                                                res1 = (eq1*b-sqrt(d)) / (a+a);
+                                                                                cout<<"\nYou first result is: "<<res<<endl;
+                                                                                cout<<"\nYou second result is: "<<res1<<endl;
+                                                                        }
+
+                                                                        if (d<0) {
+                                                                            cout<<"\nAnswer does not exist.\n";
+                                                                                }
+
+                                                                    }
+                                                                    if (check==2) {
+                                                            cout<<"\nSorry try again!"; }
+                                                            }
+
+
+
+                                                        if (a == -1 && b<0 && b!=-1 && c<0)
+                                                        {
+                                                        cout<<"\nYour equation looks like: "<<endl;
+                                                        cout<<"-x^2 "<<b<<"x "<<c<<" = 0?\n";
+                                                        cout<<"Type 1 if yes, 2 if no.\n\nType here: ";
+
+                                                            double check;
+                                                                cin>>check;
+
+                                                            while (check<1 || check>2) {
+                                                                cout<<"Please, type 1 or 2!\nType here: ";
+                                                                    cin>>check;
+                                                    }
+                                                    if (check==1) {
+                                                             d=b*b+eq4*a*c;
+                                                                if (d>0) {
+                                                                                res = (eq1*b+sqrt(d)) / (a+a);
+                                                                                res1 = (eq1*b-sqrt(d)) / (a+a);
+                                                                                cout<<"\nYou first result is: "<<res<<endl;
+                                                                                cout<<"\nYou second result is: "<<res1<<endl;
+                                                                        }
+
+                                                                        if (d<0) {
+                                                                            cout<<"\nAnswer does not exist.\n";
+                                                                                }
+
+                                                                    }
+                                                                    if (check==2) {
+                                                            cout<<"\nSorry try again!"; }
+                                                            }
+
+
+                                                        if (a==-1 && b==1 && c>0)
+                                                    {
+                                                        cout<<"\nYour equation looks like: "<<endl;
+                                                        cout<<"-x^2"<<" +"<<"x"<<" +"<<c<<" = 0?\n";
+                                                        cout<<"Type 1 if yes, 2 if no.\n\nType here: ";
+
+                                                            double check;
+                                                                cin>>check;
+
+                                                            while (check<1 || check>2) {
+                                                                cout<<"Please, type 1 or 2!\nType here: ";
+                                                                    cin>>check;
+                                                    }
+                                                    if (check==1) {
+                                                             d=b*b+eq4*a*c;
+                                                                if (d>0) {
+                                                                                res = (eq1*b+sqrt(d)) / (a+a);
+                                                                                res1 = (eq1*b-sqrt(d)) / (a+a);
+                                                                                cout<<"\nYou first result is: "<<res<<endl;
+                                                                                cout<<"\nYou second result is: "<<res1<<endl;
+                                                                        }
+
+                                                                        if (d<0) {
+                                                                            cout<<"\nAnswer does not exist.\n";
+                                                                                }
+
+                                                                    }
+                                                                    if (check==2) {
+                                                            cout<<"\nSorry try again!"; }
+                                                            }
+
+                                                        if (a==-1 && b==1 && c<0)
+                                                    {
+                                                        cout<<"\nYour equation looks like: "<<endl;
+                                                        cout<<"-x^2"<<" +"<<"x "<<c<<" = 0?\n";
+                                                        cout<<"Type 1 if yes, 2 if no.\n\nType here: ";
+
+                                                            double check;
+                                                                cin>>check;
+
+                                                            while (check<1 || check>2) {
+                                                                cout<<"Please, type 1 or 2!\nType here: ";
+                                                                    cin>>check;
+                                                    }
+                                                    if (check==1) {
+                                                             d=b*b+eq4*a*c;
+                                                                if (d>0) {
+                                                                                res = (eq1*b+sqrt(d)) / (a+a);
+                                                                                res1 = (eq1*b-sqrt(d)) / (a+a);
+                                                                                cout<<"\nYou first result is: "<<res<<endl;
+                                                                                cout<<"\nYou second result is: "<<res1<<endl;
+                                                                        }
+
+                                                                        if (d<0) {
+                                                                            cout<<"\nAnswer does not exist.\n";
+                                                                                }
+
+                                                                    }
+                                                                    if (check==2) {
+                                                            cout<<"\nSorry try again!"; }
+                                                            }
+
+
+                                                    if (a == -1 && b == -1 && c>0)
+                                                    {
+                                                        cout<<"\nYour equation looks like: "<<endl;
+                                                        cout<<"-x^2"<<" -x"<<" + "<<c<<" = 0?\n";
+                                                        cout<<"Type 1 if yes, 2 if no.\n\nType here: ";
+
+                                                            double check;
+                                                                cin>>check;
+
+                                                            while (check<1 || check>2) {
+                                                                cout<<"Please, type 1 or 2!\nType here: ";
+                                                                    cin>>check;
+                                                    }
+                                                    if (check==1) {
+                                                             d=b*b+eq4*a*c;
+                                                                if (d>0) {
+                                                                                res = (eq1*b+sqrt(d)) / (a+a);
+                                                                                res1 = (eq1*b-sqrt(d)) / (a+a);
+                                                                                cout<<"\nYou first result is: "<<res<<endl;
+                                                                                cout<<"\nYou second result is: "<<res1<<endl;
+                                                                        }
+
+                                                                        if (d<0) {
+                                                                            cout<<"\nAnswer does not exist.\n";
+                                                                                }
+
+                                                                    }
+                                                                    if (check==2) {
+                                                            cout<<"\nSorry try again!"; }
+                                                            }
+
+
+
+                                                    if (a == -1 && b == -1 && c<0)
+                                                    {
+                                                        cout<<"\nYour equation looks like: "<<endl;
+                                                        cout<<"-x^2"<<" -x "<<c<<" = 0?\n";
+                                                        cout<<"Type 1 if yes, 2 if no.\n\nType here: ";
+
+                                                            double check;
+                                                                cin>>check;
+
+                                                            while (check<1 || check>2) {
+                                                                cout<<"Please, type 1 or 2!\nType here: ";
+                                                                    cin>>check;
+                                                    }
+                                                    if (check==1) {
+                                                             d=b*b+eq4*a*c;
+                                                                if (d>0) {
+                                                                                res = (eq1*b+sqrt(d)) / (a+a);
+                                                                                res1 = (eq1*b-sqrt(d)) / (a+a);
+                                                                                cout<<"\nYou first result is: "<<res<<endl;
+                                                                                cout<<"\nYou second result is: "<<res1<<endl;
+                                                                        }
+
+                                                                        if (d<0) {
+                                                                            cout<<"\nAnswer does not exist.\n";
+                                                                                }
+
+                                                                    }
+                                                                    if (check==2) {
+                                                            cout<<"\nSorry try again!"; }
+                                                            }
+
+
+
+                                                if (a!=1 && a!=-1 && b==1 && c>0)
+                                                {
+                                                        cout<<"\nYour equation looks like: "<<endl;
+                                                        cout<<a<<"x^2"<<" + x"<<" + "<<c<<" = 0?\n";
+                                                        cout<<"Type 1 if yes, 2 if no.\n\nType here: ";
+
+                                                            double check;
+                                                                cin>>check;
+
+                                                            while (check<1 || check>2) {
+                                                                cout<<"Please, type 1 or 2!\nType here: ";
+                                                                    cin>>check;
+                                                    }
+                                                    if (check==1) {
+                                                             d=b*b+eq4*a*c;
+                                                                if (d>0) {
+                                                                                res = (eq1*b+sqrt(d)) / (a+a);
+                                                                                res1 = (eq1*b-sqrt(d)) / (a+a);
+                                                                                cout<<"\nYou first result is: "<<res<<endl;
+                                                                                cout<<"\nYou second result is: "<<res1<<endl;
+                                                                        }
+
+                                                                        if (d<0) {
+                                                                            cout<<"\nAnswer does not exist.\n";
+                                                                                }
+
+                                                                    }
+                                                                    if (check==2) {
+                                                            cout<<"\nSorry try again!"; }
+                                                            }
+
+
+                                                    if (a!=1 && a!=-1 && b==1 && c<0)
+                                                {
+                                                        cout<<"\nYour equation looks like: "<<endl;
+                                                        cout<<a<<"x^2"<<" +x "<<c<<" = 0?\n";
+                                                        cout<<"Type 1 if yes, 2 if no.\n\nType here: ";
+
+                                                            double check;
+                                                                cin>>check;
+
+                                                            while (check<1 || check>2) {
+                                                                cout<<"Please, type 1 or 2!\nType here: ";
+                                                                    cin>>check;
+                                                    }
+                                                    if (check==1) {
+                                                             d=b*b+eq4*a*c;
+                                                                if (d>0) {
+                                                                                res = (eq1*b+sqrt(d)) / (a+a);
+                                                                                res1 = (eq1*b-sqrt(d)) / (a+a);
+                                                                                cout<<"\nYou first result is: "<<res<<endl;
+                                                                                cout<<"\nYou second result is: "<<res1<<endl;
+                                                                        }
+
+                                                                        if (d<0) {
+                                                                            cout<<"\nAnswer does not exist.\n";
+                                                                                }
+
+                                                                    }
+                                                                    if (check==2) {
+                                                            cout<<"\nSorry try again!"; }
+                                                            }
+
+
+                                                  if (a!=1 && a!=-1 && b==-1 && c<0)
+                                                {
+                                                        cout<<"\nYour equation looks like: "<<endl;
+                                                        cout<<a<<"x^2"<<" -x "<<c<<" = 0?\n";
+                                                        cout<<"Type 1 if yes, 2 if no.\n\nType here: ";
+
+                                                            double check;
+                                                                cin>>check;
+
+                                                            while (check<1 || check>2) {
+                                                                cout<<"Please, type 1 or 2!\nType here: ";
+                                                                    cin>>check;
+                                                    }
+                                                    if (check==1) {
+                                                             d=b*b+eq4*a*c;
+                                                                if (d>0) {
+                                                                                res = (eq1*b+sqrt(d)) / (a+a);
+                                                                                res1 = (eq1*b-sqrt(d)) / (a+a);
+                                                                                cout<<"\nYou first result is: "<<res<<endl;
+                                                                                cout<<"\nYou second result is: "<<res1<<endl;
+                                                                        }
+
+                                                                        if (d<0) {
+                                                                            cout<<"\nAnswer does not exist.\n";
+                                                                                }
+
+                                                                    }
+                                                                    if (check==2) {
+                                                            cout<<"\nSorry try again!"; }
+                                                            }
+
+                                                       if (a!=1 && a!=-1 && b==-1 && c>0)
+                                                {
+                                                        cout<<"\nYour equation looks like: "<<endl;
+                                                        cout<<a<<"x^2"<<" - x"<<" + "<<c<<" = 0?\n";
+                                                        cout<<"Type 1 if yes, 2 if no.\n\nType here: ";
+
+                                                            double check;
+                                                                cin>>check;
+
+                                                            while (check<1 || check>2) {
+                                                                cout<<"Please, type 1 or 2!\nType here: ";
+                                                                    cin>>check;
+                                                    }
+                                                    if (check==1) {
+                                                             d=b*b+eq4*a*c;
+                                                                if (d>0) {
+                                                                                res = (eq1*b+sqrt(d)) / (a+a);
+                                                                                res1 = (eq1*b-sqrt(d)) / (a+a);
+                                                                                cout<<"\nYou first result is: "<<res<<endl;
+                                                                                cout<<"\nYou second result is: "<<res1<<endl;
+                                                                        }
+
+                                                                        if (d<0) {
+                                                                            cout<<"\nAnswer does not exist.\n";
+                                                                                }
+
+                                                                    }
+                                                                    if (check==2) {
+                                                            cout<<"\nSorry try again!"; }
+                                                            }
+                                                }
     return 0;
 }
